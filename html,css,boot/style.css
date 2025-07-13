@@ -1,0 +1,160 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-color: #5a6268;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #343a40;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}
+
+/* Custom Outline Button */
+.btn-outline-custom {
+  border: 2px solid #000;
+  background: none;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-custom:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  background-color: #fff;
+  height: 100%; /* makes all cards equal height */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Cause Cards (text overlay) */
+.cause-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Impact Stats Boxes */
+.impact-box {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Form Inputs */
+form input,
+form textarea,
+form select {
+  border-radius: 4px;
+  box-shadow: none;
+  transition: border 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #198754;
+  outline: none;
+}
+
+/* Testimonials */
+blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+  border-left: 5px solid #ccc;
+  padding-left: 15px;
+}
+
+/* Margin Utility */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1.25rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text,
+  .cause-title {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+  }
+}
+
+/* Footer */
+footer {
+  font-size: 0.95rem;
+}
+
+/* Fix column alignment in Our Causes */
+#causes .row {
+  justify-content: space-between;
+}
+
+/* Optional: Force Children’s Nutrition to center */
+#causes .col-md-3:nth-child(2) {
+  order: 2;
+}
+
+/* Elder Care last */
+#causes .col-md-3:nth-child(3) {
+  order: 3;
+}
